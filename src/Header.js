@@ -1,5 +1,5 @@
 import'./App.js';
-
+import CountUp from 'react-countup';
 function Header(){
     return(
         <div className='bgColor'>
@@ -7,7 +7,7 @@ function Header(){
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
                     <a className='Header__nav--item' href='gdfgh'>HOME</a>
-                    <a className='Header__nav--item dropdown' data-bs-toggle="dropdown" aria-expanded="false" href='gdfgh'>PRODUCTS</a>
+                    <a className='Header__nav--item' href='gdfgh'>PRODUCTS</a>
                     <a className='Header__nav--item' href='gdfgh'>ABOUT US</a>
                     <a className='Header__nav--item' href='gdfgh'>CONTACT US</a>
                 </ul>
@@ -18,13 +18,19 @@ function Header(){
             </div>
             <div className='Header__navRight'>
                 <img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" />
-                <h2>Visitor count</h2>
+                <h2 className='Header__navRight--count'><CountUpExample /></h2>
             </div>
         </div>
     </div>        
     );
-       
     
+    function CountUpExample(){
+        return (
+          <div>
+            <CountUp end={1000} duration={2} />
+          </div>
+        );
+      };
     
 }
 export default Header;
