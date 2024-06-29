@@ -1,16 +1,36 @@
-import'./App.js';
+import React, { useState } from 'react';
 import CountUp from 'react-countup';
+import'./Header.css';
 
 function Header(){
- 
+    // Drop Down for Product
+    const[dropDown,setDropDown]=useState(false);
+    const handleDropDownOpen= ()=>{
+        setDropDown(true);
+    };
+    const handleDropDownClose= () =>{
+        setDropDown(false);
+    };
+    // const handleDropDownContentClose= () =>{
+    //     setDropDown(false);
+    // };
     return(
         <div className='bgColor'>
         <div className="Header grid">
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
                     <a className='Header__nav--item' href='gdfgh'>HOME</a>
-                    <a className="Header__nav--item dropdown" href='gdfgh'  data-bs-toggle="dropdown" aria-expanded="false" onMouseOver={ProductList}>PRODUCTS</a>
-                                       
+                    <a className='Header__nav--item' href='gh' onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}>PRODUCTS</a> 
+                        {dropDown && (
+                            <ul  className='Header__dropBox'>
+                                <li className='Header__dropBox--catgory' href='abc'>Body</li>
+                                <li className='Header__dropBox--catgory' href='abc'>Face</li>
+                                <li className='Header__dropBox--catgory' href='abc'>Hair</li>
+                                <li className='Header__dropBox--catgory' href='abc'>Sun Cream</li>
+                                <li className='Header__dropBox--catgory' href='abc'>Perfumes</li>
+                                <li className='Header__dropBox--catgory' href='abc'>Make up</li>
+                            </ul>
+                        )}                                                               
                     <a className='Header__nav--item' href='gdfgh'>ABOUT US</a>
                     <a className='Header__nav--item' href='gdfgh'>CONTACT US</a>
                 </ul>
@@ -25,26 +45,11 @@ function Header(){
             </div>
         </div>
     </div>        
-    );
-    
-    function ProductList(){
-        return(
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href='abc'>Action</a></li>
-            <li><a class="dropdown-item" href='abc'>Another action</a></li>
-            <li><a class="dropdown-item" href='abc'>Something else here</a></li>
-          </ul>
-        )
-        
-    }
-
-    function CountUpExample(){
-        return (
-          
-            <CountUp end={80000} duration={1.5} />
-         
-        );
-      };
-    
+    );  
 }
+    function CountUpExample(){
+        return (   
+            <CountUp end={80000} duration={1.5} /> 
+        );
+    };
 export default Header;
