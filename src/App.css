@@ -1,0 +1,23 @@
+.Main__slogan{
+    text-align: center;
+}
+.Main__slogan--1{
+    font-size: 80px;
+}
+.Main__slogan--2{
+    font-size: 25px;
+    font-weight: 200;
+}
+.Main__category{
+    width: 100%;
+    margin: 20px 0;
+    background-color: pink;
+    min-height: 600px;
+
+}
+.Main__category--detail{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    height: 100%;
+}

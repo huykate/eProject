@@ -20,17 +20,18 @@ function Header(){
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
                     <a className='Header__nav--item' href='gdfgh'>HOME</a>
-                    <a className='Header__nav--item' href='gh' onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}>PRODUCTS</a> 
+                    <a className='Header__nav--item' href='gh' onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose} >PRODUCTS</a> 
                         {dropDown && (
-                            <ul  className='Header__dropBox'>
-                                <li className='Header__dropBox--catgory' href='abc'>Body</li>
-                                <li className='Header__dropBox--catgory' href='abc'>Face</li>
-                                <li className='Header__dropBox--catgory' href='abc'>Hair</li>
-                                <li className='Header__dropBox--catgory' href='abc'>Sun Cream</li>
-                                <li className='Header__dropBox--catgory' href='abc'>Perfumes</li>
-                                <li className='Header__dropBox--catgory' href='abc'>Make up</li>
+                            <ul onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}  className='Header__dropBox'>
+                                <a className='Header__dropBox--category' href='abc'>Body</a>
+                                <a className='Header__dropBox--category' href='abc'>Face</a>
+                                <a className='Header__dropBox--category' href='abc'>Hair</a>
+                                <a className='Header__dropBox--category' href='abc'>SunCream </a>
+                                <a className='Header__dropBox--category' href='abc'>Perfumes</a>
+                                <a className='Header__dropBox--category' href='abc'>Make up </a>
                             </ul>
-                        )}                                                               
+                        )}
+                                                                                   
                     <a className='Header__nav--item' href='gdfgh'>ABOUT US</a>
                     <a className='Header__nav--item' href='gdfgh'>CONTACT US</a>
                 </ul>

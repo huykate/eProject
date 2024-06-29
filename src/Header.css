@@ -14,11 +14,13 @@
 
 }
 .Header__nav--list{
+    position: relative;
     padding: 0;
-    border: #333 solid 1px;
+    /* border: #333 solid 1px; */
     border-radius: 7px;
     margin: 0px 100px 0px 0px;
     height: fit-content;
+    display: flex;
 }
 .Header__nav--item{
     font-weight: 600;
@@ -32,17 +34,24 @@
 .Header__dropBox{
     min-width: 200px;
     padding: 0;
-    left: 120px;
+    top: 22px;
+    left: 108px;
     position: absolute;
     background-color: #ffffff;
     z-index: 1;
     list-style: none;
 }
-.Header__dropBox--catgory{
+.Header__dropBox--category{
+    display: block;
+    color: #000;
     margin: 5px 0;
     font-size: 20px;
     font-weight: 600;
     border-bottom: #000 solid 1px;
+}
+.Header__dropBox--category:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 .Header__nav--searchBar{
     box-sizing: border-box;
