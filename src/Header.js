@@ -26,7 +26,7 @@ function Header(){
                                 <a className='Header__dropBox--category' href='abc'>Body</a>
                                 <a className='Header__dropBox--category' href='abc'>Face</a>
                                 <a className='Header__dropBox--category' href='abc'>Hair</a>
-                                <a className='Header__dropBox--category' href='abc'>SunCream </a>
+                                <a className='Header__dropBox--category' href='abc'>Sun Cream </a>
                                 <a className='Header__dropBox--category' href='abc'>Perfumes</a>
                                 <a className='Header__dropBox--category' href='abc'>Make up </a>
                             </ul>

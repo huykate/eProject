@@ -37,7 +37,7 @@
     top: 22px;
     left: 108px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: transparent;
     z-index: 1;
     list-style: none;
 }
