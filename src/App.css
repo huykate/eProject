@@ -11,7 +11,11 @@
     align-self:center ;
     text-align: center;
 }
-.Main__banner--text2{
+.Main--text1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.Main--text2{
     margin: 5px auto;
     width: 350px;
     text-align: center;
@@ -48,27 +52,69 @@
         inset -4px -4px 6px 0 rgba(255,255,255,.2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
-.Main__text{
+.Main__title{
     text-align: center;
     margin: 100px 0 20px 0;
 }
-.Main__text--big{
+.Main__title--big{
     font-size: 80px;
 }
-.Main__text--mid{
+.Main__title--mid{
     font-size: 25px;
     font-weight: 200;
 }
-.Main__category{
+.Main__slide{
     width: 100%;
-    margin: 20px 0;
-    background-color: rgba(255, 192, 203, 0.375);
     min-height: 600px;
-
+    margin: 20px 0;
+    
 }
-.Main__category--detail{
+.Main__slide--detail{
     display: flex;
     justify-content: space-around;
-    align-self: center;
-    height: 100%;
+    align-items: center;
+    height: 600px;
+    background-color: rgba(255, 205, 214, 0.44);
+}
+.Main__title--btn{
+    margin: 10px 0;
+    :nth-child(2){
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+}}
+.Main__title--btnDetail{
+    background-color: transparent;
+    color: #000;
+    font-size: 25px;
+    border: 0;
+    width: 220px;
+}
+.Main__bestPro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    background-color: rgba(187, 248, 228, 0.523);
+}
+.Main__bestPro--size{
+    height: 400px;
+}
+.Main__bestPro--detail{
+    text-align: center;
+    
+}
+.Main__bestPro--btn{
+    align-content: center;
+    border: none;
+    background: linear-gradient(0deg, rgb(60, 179, 243) 0%, rgba(60, 179, 243, 0.554) 100%);
+    color: #fff;
+}
+.Main__bestPro--btn:hover{
+    opacity: .8;        
+}
+.Main__bestPro--btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
