@@ -64,17 +64,19 @@
     font-weight: 200;
 }
 .Main__slide{
-    width: 100%;
     min-height: 600px;
     margin: 20px 0;
-    
+    background-color: rgba(255, 205, 214, 0.44);
+}
+.abc{
+    background-color: red;
 }
 .Main__slide--detail{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 600px;
-    background-color: rgba(255, 205, 214, 0.44);
+    
 }
 .Main__title--btn{
     margin: 10px 0;
@@ -90,11 +92,13 @@
     width: 220px;
 }
 .Main__bestPro{
+  background-color: rgba(187, 248, 228, 0.523);
+}
+.Main__bestPro--layout{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 500px;
-    background-color: rgba(187, 248, 228, 0.523);
 }
 .Main__bestPro--size{
     height: 400px;

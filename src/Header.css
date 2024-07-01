@@ -5,13 +5,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+.Header--fix{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
 }
 .Header__nav{
     display: flex;
     justify-content: space-between;
-    /* font-size: 25px; */
     align-items: center;
-
 }
 .Header__nav--list{
     position: relative;
@@ -19,7 +23,6 @@
     /* border: #333 solid 1px; */
     border-radius: 7px;
     margin: 0px 100px 0px 0px;
-    height: fit-content;
     display: flex;
 }
 .Header__nav--item{
@@ -32,22 +35,24 @@
     opacity: 0.6;
 }
 .Header__dropBox{
-    min-width: 200px;
+    display: flex;
+    min-width: 500px;
     padding: 0;
     top: 22px;
-    left: 108px;
+    /* left: 108px; */
     position: absolute;
-    background-color: transparent;
+    background-color: red;
     z-index: 1;
     list-style: none;
+    text-align: center;
+
 }
-.Header__dropBox--category{
-    display: block;
+.Header__dropBox--detail{
+    /* border-right: #000 solid 1px; */
     color: #000;
-    margin: 5px 0;
-    font-size: 20px;
+    width: 100px;
+    margin: 5px 0px;
     font-weight: 600;
-    border-bottom: #000 solid 1px;
 }
 .Header__dropBox--category:hover{
     cursor: pointer;
@@ -82,6 +87,7 @@
 .Header__navRight{
     display: flex;
     align-items: center;
+
 }
 .Header__navRight--logo{
     margin: 0 80px 0 0;
@@ -91,4 +97,9 @@
 .Header__navRight--count{
     width: 100px;
     text-align: right;
+    margin: 0 20px;
+    
+}
+hr{
+    margin: 0;
 }

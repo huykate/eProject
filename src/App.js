@@ -29,26 +29,28 @@ function App() {
           <h2 className='Main__title--mid'>DISCOVER OUR PLANT-POWERED FORMULAS</h2>
         </div>
         <div className='Main__slide'>
-          <Slide cssClass='Main__slide' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3} indicators={true}  >
-          <div className='Main__slide--detail'>
-            1
+          <div className='grid'>
+            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3} indicators={true}  >
+            <div className='Main__slide--detail'>
+              1
+            </div>
+            <div className='Main__slide--detail'>
+              2
+            </div>
+            <div className='Main__slide--detail'>
+              3
+            </div>
+            <div className='Main__slide--detail'>
+              4
+            </div>
+            <div className='Main__slide--detail'>
+              5
+            </div>
+            <div className='Main__slide--detail'>
+              6 
+            </div>
+            </Slide>
           </div>
-          <div className='Main__slide--detail'>
-            2
-          </div>
-          <div className='Main__slide--detail'>
-            3
-          </div>
-          <div className='Main__slide--detail'>
-            4
-          </div>
-          <div className='Main__slide--detail'>
-            5
-          </div>
-          <div className='Main__slide--detail'>
-            6 
-          </div>
-          </Slide>
         </div>
         <div className='Main__title'>
           <h1 className='Main__title--big'>Beauty must-haves</h1>
@@ -59,8 +61,9 @@ function App() {
             <Button className='Main__title--btnDetail' variant="secondary">Exclusive product</Button>
           </ButtonGroup>
           
-        <div className='Main__slide'>
-          <Slide autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4}  indicators={true }>
+          <div className='Main__slide'>
+          <div className='grid'>
+            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} indicators={true}  >
             <div className='Main__slide--detail'>
               <div>1</div>
             </div>
@@ -84,16 +87,19 @@ function App() {
             </div>
             <div className='Main__slide--detail'>
              <div>8</div>
+             </div>
+            </Slide>
+          </div>
+        </div>
+        </div>
+        <div className='Main__bestPro '> 
+          <div className='Main__bestPro--layout grid'>
+            <img className='Main__bestPro--size' src={process.env.PUBLIC_URL + '../img/Aura Perfect/Aura Perfect-1.jpeg'} alt=''></img>
+            <div className='Main__bestPro--detail' >
+              <div className='Main--text1'>Aura Perfect</div>
+              <div className='Main--text2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</div>
+              <button className='Main__bestPro--btn custom-btn'>see more</button>
             </div>
-          </Slide>
-        </div>
-        </div>
-        <div className='Main__bestPro'>
-          <img className='Main__bestPro--size' src={process.env.PUBLIC_URL + '../img/Aura Perfect/Aura Perfect-1.jpeg'} alt=''></img>
-          <div className='Main__bestPro--detail' >
-            <div className='Main--text1'>Aura Perfect</div>
-            <div className='Main--text2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</div>
-            <button className='Main__bestPro--btn custom-btn'>see more</button>
           </div>
         </div>
       </div>
