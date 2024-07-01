@@ -30,7 +30,7 @@ function App() {
         </div>
         <div className='Main__slide'>
           <div className='grid'>
-            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3} indicators={true}  >
+            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3}  >
             <div className='Main__slide--detail'>
               1
             </div>
@@ -63,7 +63,7 @@ function App() {
           
           <div className='Main__slide'>
           <div className='grid'>
-            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} indicators={true}  >
+            <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} >
             <div className='Main__slide--detail'>
               <div>1</div>
             </div>
