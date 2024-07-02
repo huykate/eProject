@@ -2,6 +2,8 @@ import React, { useState,useEffect } from 'react';
 import CountUp from 'react-countup';
 import'./Header.css';
 
+
+
 function Header(){
     // Drop Down for Product
     const[dropDown,setDropDown]=useState(false);
@@ -49,7 +51,8 @@ function Header(){
                             </ul>
                         )}
                                                                                    
-                    <a className='Header__nav--item' href='gdfgh'>ABOUT US</a>
+                    <a className='Header__nav--item' href='gdfgh'>GALLERY</a>
+                    <a  className='Header__nav--item'href='gdfgh' >ABOUT US</a>
                     <a className='Header__nav--item' href='gdfgh'>CONTACT US</a>
                 </ul>
                 <div className='Header__nav--searchBar'>
