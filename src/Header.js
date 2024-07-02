@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import'./Header.css';
 
@@ -38,22 +39,22 @@ function Header(){
         <div className="Header grid">
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
-                    <a className='Header__nav--item' href='gdfgh'>HOME</a>
-                    <a className='Header__nav--item' href='gh' onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose} >PRODUCTS</a> 
+                    <Link to={"/"} className='Header__nav--item'>HOME</Link>
+                    <Link to={"/Product"} className='Header__nav--item'onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose} >PRODUCTS</Link> 
                         {dropDown && (
                             <ul onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}  className='Header__dropBox'>
-                                <a className='Header__dropBox--detail' href='abc'>Body</a>
-                                <a className='Header__dropBox--detail' href='abc'>Face</a>
-                                <a className='Header__dropBox--detail' href='abc'>Hair</a>
-                                <a className='Header__dropBox--detail' href='abc'>Sun Cream </a>
-                                <a className='Header__dropBox--detail' href='abc'>Perfumes</a>
-                                <a className='Header__dropBox--detail' href='abc'>Make up </a>
+                                <Link to={"/"} className='Header__dropBox--detail'>Body</Link>
+                                <Link to={"/"} className='Header__dropBox--detail'>Face</Link>
+                                <Link to={"/"} className='Header__dropBox--detail'>Hair</Link>
+                                <Link to={"/"} className='Header__dropBox--detail'>Sun Cream </Link>
+                                <Link to={"/"} className='Header__dropBox--detail'>Perfumes</Link>
+                                <Link to={"/"} className='Header__dropBox--detail'>Make up </Link>
                             </ul>
                         )}
                                                                                    
-                    <a className='Header__nav--item' href='gdfgh'>GALLERY</a>
-                    <a  className='Header__nav--item'href='gdfgh' >ABOUT US</a>
-                    <a className='Header__nav--item' href='gdfgh'>CONTACT US</a>
+                    <Link to={"/gallery"} className='Header__nav--item'>GALLERY</Link>
+                    <Link to={"/aboutus"}  className='Header__nav--item'>ABOUT US</Link>
+                    <Link to={"/contactus"} className='Header__nav--item'>CONTACT US</Link>
                 </ul>
                 <div className='Header__nav--searchBar'>
                     <input className='Header__nav--search' type='text' placeholder='Search here'></input>

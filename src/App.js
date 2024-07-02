@@ -2,9 +2,9 @@ import './App.css';
 import './index.css';
 import Header from './Header.js';
 import { Routes,Route } from 'react-router-dom';
-import Main from './HomePage-Main.js';
+import Main from './HomePage.js';
 import AboutUs from './AboutUs.js';
-// import Slide from 'react-slick';
+
 
 
 function App() {
