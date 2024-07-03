@@ -4,6 +4,7 @@ import Header from './Header.js';
 import { Routes,Route } from 'react-router-dom';
 import Main from './HomePage.js';
 import AboutUs from './AboutUs.js';
+import Footer from './Footer.js';
 
 
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/aboutus' element={<AboutUs />} />
         </Routes>
+        <Footer /> 
     </>
   );
 }
