@@ -1,17 +1,14 @@
 .bgColor{
-    background-color: rgb(255, 0, 0);
+    background-color: #fffdeb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: inherit;
 }
 .Header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eb2424  ;
-}
-.Header--fix{
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
 }
 .Header__nav{
     display: flex;

@@ -1,0 +1,127 @@
+.Main__banner{
+    background-color: #99f0ff;
+}
+.Main__banner--detail{
+    display: flex;
+    justify-content: space-between;
+}
+.Main__banner--text{
+    width: 600px;
+    height: inherit;
+    align-self:center ;
+    text-align: center;
+}
+.Main__banner--img{
+    width: 65%;
+}
+.Main--text1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.Main--text2{
+    margin: 5px auto;
+    width: 350px;
+    text-align: center;
+    font-size: 15px;
+}
+.custom-btn {
+    margin: 5px 0;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 0px 25px;
+    font-weight: 500;
+    font-size: 15px;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;          
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                     7px 7px 20px 0px rgba(0,0,0,.1),
+                     4px 5px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.Main__banner--btn {
+    border: none;
+    background: linear-gradient(0deg, rgb(60, 179, 243) 0%, rgba(60, 179, 243, 0.554) 100%);
+    color: #fff;
+}
+.Main__banner--btn:hover{
+    opacity: .8;        
+}
+.Main__banner--btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.Main__title{
+    text-align: center;
+    margin: 100px 0 20px 0;
+}
+.Main__title--big{
+    font-size: 80px;
+}
+.Main__title--mid{
+    font-size: 25px;
+    font-weight: 200;
+}
+.Main__slide{
+    min-height: 600px;
+    margin: 20px 0;
+    background-color: #fff;
+}
+.abc{
+    background-color: red;
+}
+.Main__slide--detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    
+}
+.Main__title--btn{
+    margin: 10px 0;
+    :nth-child(2){
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+}}
+.Main__title--btnDetail{
+    background-color: transparent;
+    color: #000;
+    font-size: 25px;
+    border: 0;
+    width: 220px;
+}
+.Main__bestPro{
+  background-color: #fbf6f3;
+}
+.Main__bestPro--layout{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+.Main__bestPro--size{
+    height: 400px;
+}
+.Main__bestPro--detail{
+    text-align: center;
+    
+}
+.Main__bestPro--btn{
+    align-content: center;
+    border: none;
+    background: linear-gradient(0deg, rgb(60, 179, 243) 0%, rgba(60, 179, 243, 0.554) 100%);
+    color: #fff;
+}
+.Main__bestPro--btn:hover{
+    opacity: .8;        
+}
+.Main__bestPro--btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}

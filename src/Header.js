@@ -1,9 +1,7 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import'./Header.css';
-
-
 
 function Header(){
     // Drop Down for Product
@@ -14,28 +12,9 @@ function Header(){
     const handleDropDownClose= () =>{
         setDropDown(false);
     };
-    //Fix header
-    const [fix,setFix]=useState(false);
-    const handleFix = () =>{
-        const offFix = window.scrollY;
-        if(offFix > 100)
-            {
-                setFix(true);
-            }
-        else
-        {
-            setFix(false)
-        }    
-    };
-    useEffect(()=>{
-        window.addEventListener('scroll',handleFix)
-        return ()=>{
-            window.removeEventListener('scroll',handleFix)
-        };
-    },[]);
 
     return(
-        <div className={`bgColor ${fix ? 'Header--fix':'' }`}>
+        <div className='bgColor'>
         <div className="Header grid">
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
