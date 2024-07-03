@@ -6,6 +6,9 @@ import Main from './HomePage.js';
 import AboutUs from './AboutUs.js';
 import Footer from './Footer.js';
 import ContactUs from './ContactUs.js';
+import Sitemap from './Sitemap.js';
+import Product from './Products.js';
+import Galeery from './Gallery.js';
 
 
 
@@ -18,6 +21,10 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/contactus' element={<ContactUs />} />
+          <Route path='/sitemap' element={<Sitemap />} />
+          <Route path='/Product' element={<Product />} />
+          <Route path='/Gallery' element={<Galeery />} />
+
         </Routes>
         <Footer /> 
     </>

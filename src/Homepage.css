@@ -43,7 +43,7 @@
 
 .Main__banner--btn {
     border: none;
-    background: linear-gradient(0deg, rgb(60, 179, 243) 0%, rgba(60, 179, 243, 0.554) 100%);
+    background: linear-gradient(0deg, rgb(244, 140, 214) 0%, rgba(60, 179, 243, 0.554) 100%);
     color: #fff;
 }
 .Main__banner--btn:hover{
@@ -113,7 +113,7 @@
 .Main__bestPro--btn{
     align-content: center;
     border: none;
-    background: linear-gradient(0deg, rgb(60, 179, 243) 0%, rgba(60, 179, 243, 0.554) 100%);
+    background: linear-gradient(0deg, rgb(244, 140, 214) 0%, rgba(60, 179, 243, 0.554) 100%);
     color: #fff;
 }
 .Main__bestPro--btn:hover{

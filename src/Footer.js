@@ -2,6 +2,7 @@ import React from "react";
 import "./App.js";
 import "./App.css";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -66,15 +67,15 @@ function Footer() {
               <div className="about-links">
                 <ul>
                   <li>
-                    <a className="about-us" href="a">
+                    <Link to={'/aboutus'} className="about-us" >
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="a">Contact Us</a>
+                    <Link to={'/contactus'}>Contact Us</Link>
                   </li>
                   <li>
-                    <a href="a">Site Map</a>
+                    <Link to={'/sitemap'}>Site Map</Link>
                   </li>
                 </ul>
               </div>
