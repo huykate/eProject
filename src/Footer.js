@@ -44,37 +44,37 @@ function Footer() {
                 <h3>CATEGORY</h3>
                 <ul>
                   <li>
-                    <a href="#">FACE</a>
+                    <a href="a">FACE</a>
                   </li>
                   <li>
-                    <a href="#">BODY</a>
+                    <a href="a">BODY</a>
                   </li>
                   <li>
-                    <a href="#">SUN CREAM</a>
+                    <a href="a">SUN CREAM</a>
                   </li>
                   <li>
-                    <a href="#">HAIR</a>
+                    <a href="a">HAIR</a>
                   </li>
                   <li>
-                    <a href="#">PERFUME</a>
+                    <a href="a">PERFUME</a>
                   </li>
                   <li>
-                    <a href="#">MAKE UP</a>
+                    <a href="a">MAKE UP</a>
                   </li>
                 </ul>
               </div>
               <div className="about-links">
                 <ul>
                   <li>
-                    <a className="about-us" href="#">
+                    <a className="about-us" href="a">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="#">Contact Us</a>
+                    <a href="a">Contact Us</a>
                   </li>
                   <li>
-                    <a href="#">Site Map</a>
+                    <a href="a">Site Map</a>
                   </li>
                 </ul>
               </div>
@@ -117,9 +117,9 @@ src={process.env.PUBLIC_URL + "./photo/youtube.png"}
               </ul>
             </div>
             <div className="clarinsLogo-footer">
-              <a href="#">
+              <a href="a">
                 <img
-                  src={process.env.PUBLIC_URL + "./photo/Ảnh1-removebg.png"}
+                  src={process.env.PUBLIC_URL + "./photo/Ảnh1-removebg.png"} alt="Logo"
                 ></img>
               </a>
             </div>
@@ -144,14 +144,14 @@ src={process.env.PUBLIC_URL + "./photo/youtube.png"}
                   <br />9 AM - 6:30 PM ET
                 </p>
                 <p>
-                  <a href="#">Chat with Customer Care</a>
+                  <a href="a">Chat with Customer Care</a>
                   <br />
                   Monday - Friday (excluding holidays)
                   <br />
                   10 AM - 5 PM ET
                 </p>
                 <p>
-                  <a href="#">Live Consultation</a>
+                  <a href="a">Live Consultation</a>
                   <br />
                   Monday - Friday (excluding holidays)
                   <br />
