@@ -2,8 +2,9 @@
     background-color: #99f0ff;
 }
 .Main__banner--detail{
+    
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
 }
 .Main__banner--text{
     width: 600px;

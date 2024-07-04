@@ -18,9 +18,8 @@
 .Header__nav--list{
     position: relative;
     padding: 0;
-    /* border: #333 solid 1px; */
     border-radius: 7px;
-    margin: 0px 100px 0px 0px;
+    margin: 0;
     display: flex;
 }
 .Header__nav--item{

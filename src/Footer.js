@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-width">
+    <footer className="footer ">
+      <div className="grid">
         <div>
           <div className="payment-methods">
             <hr />
