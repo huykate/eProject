@@ -8,7 +8,7 @@ import Footer from './Footer.js';
 import ContactUs from './ContactUs.js';
 import Sitemap from './Sitemap.js';
 import Product from './Products.js';
-import Galeery from './Gallery.js';
+import Gallery from './Gallery.js';
 
 
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/sitemap' element={<Sitemap />} />
           <Route path='/Product' element={<Product />} />
-          <Route path='/Gallery' element={<Galeery />} />
+          <Route path='/Gallery' element={<Gallery />} />
 
         </Routes>
         <Footer /> 
