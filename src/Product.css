@@ -1,0 +1,44 @@
+.Filter{
+    display: flex; background-color: #f5efeb;
+    justify-content: space-between;
+    width: 1290px;
+    margin: 20px auto;
+}
+.Filter__feature{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.Filter__sort{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.Filter__sort--drop{
+    height: 40px;
+    background-color: transparent;
+    border:0;
+    border-radius: 0;
+    color: #333;
+    margin-right: 10px;
+}
+
+.Filter__sort--btn:focus,
+.Filter__sort--btn:active,
+.Filter__sort--btn:hover{
+    color: #333;
+    background-color: transparent;
+}
+.Filter__separation{
+    position: absolute;
+    height: 28px;
+    width: 1px;
+    background-color: #333;
+}
+.Product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+}
