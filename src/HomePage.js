@@ -1,9 +1,22 @@
 import './Homepage.css'
 import { Slide } from 'react-slideshow-image';
+import { useState,useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Card from 'react-bootstrap/Card';
+
 import 'react-slideshow-image/dist/styles.css';
 function Main(){
+
+  const [currentSlide, setCurrentSlide] = useState(0); //store content's slide
+
+  const handleButtonClick = (index) => {
+    setCurrentSlide(index); //update state
+    // useEffect(() => {
+    //   console.log("Current slide changed to: ", currentSlide); 
+    // }, [currentSlide]);
+
+  };
   return(
     <>
     <div className='Main'>
@@ -26,22 +39,52 @@ function Main(){
       <div className='grid'>
         <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3}  >
         <div className='Main__slide--detail'>
-          1
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/body.jpg'} />
+          <Card.Body className='Main__slide--tiitle' >
+            <Card.Title >Body</Card.Title>
+          </Card.Body>
+        </Card>
         </div>
         <div className='Main__slide--detail'>
-          2
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/face.jpg'} />
+          <Card.Body className='Main__slide--tiitle'>
+            <Card.Title>Face</Card.Title>
+          </Card.Body>
+        </Card>
         </div>
         <div className='Main__slide--detail'>
-          3
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/makup.jpg'} />
+          <Card.Body className='Main__slide--tiitle'>
+            <Card.Title>Make up</Card.Title>
+          </Card.Body>
+        </Card>
         </div>
         <div className='Main__slide--detail'>
-          4
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/sunscreen.jpg'} />
+          <Card.Body className='Main__slide--tiitle'>
+            <Card.Title>Make up</Card.Title>
+          </Card.Body>
+        </Card>
         </div>
         <div className='Main__slide--detail'>
-          5
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/hair.jpg'} />
+          <Card.Body className='Main__slide--tiitle'>
+            <Card.Title>Hair</Card.Title>
+          </Card.Body>
+        </Card>
         </div>
         <div className='Main__slide--detail'>
-          6 
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/perfumes.jpg'} />
+          <Card.Body className='Main__slide--tiitle'>
+            <Card.Title>Body</Card.Title>
+          </Card.Body>
+        </Card> 
         </div>
         </Slide>
       </div>
@@ -50,16 +93,16 @@ function Main(){
       <h1 className='Main__title--big'>Beauty must-haves</h1>
       <h2 className='Main__title--mid'>DISCOVER OUR ICONIC PRODUCTS</h2>
       <ButtonGroup className='Main__title--btn'  aria-label="Basic example">
-        <Button className='Main__title--btnDetail' variant="secondary">Best seller</Button>
-        <Button className='Main__title--btnDetail' variant="secondary">What's new</Button>
-        <Button className='Main__title--btnDetail' variant="secondary">Exclusive product</Button>
+        <Button className='Main__title--btnDetail' variant="secondary" onClick={() => handleButtonClick(0)} >Best seller</Button>
+        <Button className='Main__title--btnDetail' variant="secondary" onClick={() => handleButtonClick(1)} >What's new</Button>
+        <Button className='Main__title--btnDetail' variant="secondary" onClick={() => handleButtonClick(2)} >Exclusive product</Button>
       </ButtonGroup>
       
       <div className='Main__slide'>
       <div className='grid'>
-        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} >
+        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} currentSlide={currentSlide}  >
         <div className='Main__slide--detail'>
-          <div>1</div>
+          
         </div>
         <div className='Main__slide--detail'>
          <div>2</div>

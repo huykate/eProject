@@ -1,5 +1,5 @@
 .Main__banner{
-    background-color: #99f0ff;
+    background-color: #EBFCFF;
 }
 .Main__banner--detail{
     
@@ -44,7 +44,7 @@
 
 .Main__banner--btn {
     border: none;
-    background: linear-gradient(0deg, rgb(244, 140, 214) 0%, rgba(60, 179, 243, 0.554) 100%);
+    background: linear-gradient(0deg, rgb(244, 140, 214) , #202ffe 80%);
     color: #fff;
 }
 .Main__banner--btn:hover{
@@ -68,19 +68,29 @@
     font-weight: 200;
 }
 .Main__slide{
-    min-height: 600px;
     margin: 20px 0;
     background-color: #fff;
 }
-.abc{
-    background-color: red;
+.Main__slide--layout{
+    height: 600px;
 }
 .Main__slide--detail{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 600px;
-    
+    height: 500px;
+}
+.Main__slide--detail:hover{
+    opacity: 0.8;zoom: 1.05;
+}
+.Main__slide--img{
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.2 ;
+}
+
+.Main__slide--tiitle{
+    text-align: center;
 }
 .Main__title--btn{
     margin: 10px 0;
@@ -114,7 +124,8 @@
 .Main__bestPro--btn{
     align-content: center;
     border: none;
-    background: linear-gradient(0deg, rgb(244, 140, 214) 0%, rgba(60, 179, 243, 0.554) 100%);
+    background: linear-gradient(0deg, rgb(244, 140, 214) , #202ffe 80%);
+
     color: #fff;
 }
 .Main__bestPro--btn:hover{
