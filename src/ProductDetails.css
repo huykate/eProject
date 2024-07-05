@@ -46,9 +46,11 @@
 }
 
 .product-rating {
+    position: absolute;
     font-size: 1.5em;
     color: #ff6600;
     margin-right: 10px;
+    bottom: 60px;
 }
 
 .product-reviews, .product-stock, .product-sold {

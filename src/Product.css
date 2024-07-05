@@ -37,23 +37,23 @@
     width: 1px;
     background-color: #333;
 }
-.Product{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 100px;
-    margin: 50px 0;
-}
+
 .Product__layout{
     position: relative;
-    height: 450px;
+    height: 550px;
+    margin: 50px 0;
 }
+
 .Product__img{
-    height: 250px;
-    object-fit: cover;
     transition: all .3s;
 }
 .Product__img:hover{
     opacity: 0.7;
+}
+.product-rating {
+    font-size: 1.5em;
+    color: #ff6600;
+    margin-right: 10px;
 }
 .Product__btn{
     position: absolute;
