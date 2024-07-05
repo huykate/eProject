@@ -6,34 +6,34 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-width">
+    <footer className="footer ">
+      <div className="grid">
         <div>
           <div className="payment-methods">
             <hr />
             <div className="payment-methods-img">
               <img
-                src={process.env.PUBLIC_URL + "./photo/visa.png"}
+                src={process.env.PUBLIC_URL + "../photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "./photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
               <img
-                src={process.env.PUBLIC_URL + "./photo/visa.png"}
+                src={process.env.PUBLIC_URL + "../photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "./photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
               <img
-                src={process.env.PUBLIC_URL + "./photo/visa.png"}
+                src={process.env.PUBLIC_URL + "../photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "./photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
             </div>
@@ -86,7 +86,7 @@ function Footer() {
                 <li>
                   <a href="https://www.clarinsusa.com/">
                     <img
-                      src={process.env.PUBLIC_URL + "./photo/facebook.png"}
+                      src={process.env.PUBLIC_URL + "../photo/facebook.png"}
                       alt="Facebook"
                     ></img>
                   </a>
@@ -94,7 +94,7 @@ function Footer() {
                 <li>
                   <a href="https://www.youtube.com/channel/UC_7lNVaR-bVxeQwPRta5RyQ">
                     <img
-src={process.env.PUBLIC_URL + "./photo/youtube.png"}
+src={process.env.PUBLIC_URL + "../photo/youtube.png"}
                       alt="Youtube"
                     ></img>
                   </a>
@@ -102,7 +102,7 @@ src={process.env.PUBLIC_URL + "./photo/youtube.png"}
                 <li>
                   <a href="https://www.instagram.com/clarinsusa/">
                     <img
-                      src={process.env.PUBLIC_URL + "./photo/Instagram_V3.svg"}
+                      src={process.env.PUBLIC_URL + "../photo/Instagram_V3.svg"}
                       alt="Instagram"
                     ></img>
                   </a>
@@ -110,7 +110,7 @@ src={process.env.PUBLIC_URL + "./photo/youtube.png"}
                 <li>
                   <a href="https://twitter.com/clarinsusa">
                     <img
-                      src={process.env.PUBLIC_URL + "./photo/Twitter_Black.svg"}
+                      src={process.env.PUBLIC_URL + "../photo/Twitter_Black.svg"}
                       alt="Twitter"
                     ></img>
                   </a>
@@ -120,7 +120,7 @@ src={process.env.PUBLIC_URL + "./photo/youtube.png"}
             <div className="clarinsLogo-footer">
               <a href="a">
                 <img
-                  src={process.env.PUBLIC_URL + "./photo/Ảnh1-removebg.png"} alt="Logo"
+                  src={process.env.PUBLIC_URL + "../photo/Ảnh1-removebg.png"} alt="Logo"
                 ></img>
               </a>
             </div>

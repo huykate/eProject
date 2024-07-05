@@ -1,6 +1,8 @@
 import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import'./Header.css';
 
 function Header(){
@@ -43,6 +45,9 @@ function Header(){
             <div className='Header__navRight'>
                 <img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" />
                 <div className='Header__navRight--count'><h2><CountUpExample /></h2></div>
+                <Link to="/cart" className='Header__navRight--cart'>
+                        <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+                </Link>
             </div>
         </div>
         <hr></hr>
