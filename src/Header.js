@@ -43,7 +43,7 @@ function Header(){
                 </div>
             </div>
             <div className='Header__navRight'>
-                <img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" />
+                <a href='/' ><img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" /></a>
                 <div className='Header__navRight--count'><h2><CountUpExample /></h2></div>
                 <Link to="/cart" className='Header__navRight--cart'>
                         <FontAwesomeIcon icon={faShoppingCart} size="2x" />
