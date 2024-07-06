@@ -4,6 +4,7 @@
     top: 0;
     z-index: 100;
     width: inherit;
+    margin: 0 auto;
 }
 .Header{
     display: flex;
@@ -18,14 +19,12 @@
 .Header__nav--list{
     position: relative;
     padding: 0;
-    border-radius: 7px;
     margin: 0;
     display: flex;
 }
 .Header__nav--item{
     font-weight: 600;
     color: #000;
-    text-decoration: none;
     margin: 0 20px;
 }
 .Header__nav--item:hover{
@@ -36,7 +35,6 @@
     min-width: 500px;
     padding: 0;
     top: 22px;
-    /* left: 108px; */
     position: absolute;
     background-color: #fff;
     z-index: 1;
@@ -103,11 +101,31 @@
     text-decoration: none;
     margin-left: 20px;
 }
-
 .Header__navRight--cart:hover {
     color: grey;
 }
-
 hr{
     margin: 0;
+}
+@media screen and (max-width:1290px){
+    .Header__nav--item{
+        font-weight: 600;
+        color: #000;
+        font-size: 10px;
+    }
+    .Header__nav--searchBar{
+        height: 25px;
+    }
+    .Header__nav--search{
+        padding: 5px 5px;
+        width: 70px;
+        font-size: 10px;
+    }
+    .Header__nav--btn{
+        min-width: 25px;
+    }
+    .Header_cart{
+        margin: 0 20px;
+    }
+
 }

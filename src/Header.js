@@ -17,7 +17,7 @@ function Header(){
 
     return(
         <div className='bgColor'>
-        <div className="Header grid">
+        <div className="Header grid ">
             <div className='Header__nav'>
                 <ul className='Header__nav--list'>
                     <Link to={"/"} className='Header__nav--item'>HOME</Link>
@@ -46,11 +46,14 @@ function Header(){
                 <a href='/' ><img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" /></a>
                 <div className='Header__navRight--count'><h2><CountUpExample /></h2></div>
                 <Link to="/cart" className='Header__navRight--cart'>
-                        <FontAwesomeIcon icon={faShoppingCart} variant='none' size="2x" />
+                        <FontAwesomeIcon className='Header_cart' icon={faShoppingCart} variant='none' size="2x" />
                 </Link>
             </div>
+        
         </div>
+
         <hr></hr>
+        
     </div>        
     );  
 }

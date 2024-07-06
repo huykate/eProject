@@ -17,7 +17,7 @@ function AboutUs(){
                 </div>
             <div className='Card'>
                 <div className='Card__detail grid'>
-                    <img className='Card__img ismg-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/christina.jpg'} alt=''></img>
+                    <img className='Card__img img-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/christina.jpg'} alt=''></img>
                     <div className='Card__text'>
                         <div className='Card__text--service'>Manager</div>
                         <p>You can't just ask customers what they want and then try to give that to them. By the time you get it built, they'll want something new.</p>
@@ -36,12 +36,12 @@ function AboutUs(){
                             - Coy Jason  -
                         </h2>  
                     </div> 
-                    <img className='Card__img--2 ismg-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/ali.jpg'} alt=''></img>
+                    <img className='Card__img--2 img-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/ali.jpg'} alt=''></img>
                 </div>
             </div>
             <div className='Card'>
                 <div className='Card__detail grid'>
-                    <img className='Card__img ismg-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/Wendi Monna.jpg'} alt=''></img>
+                    <img className='Card__img img-fluid' src = {process.env.PUBLIC_URL + '../img/Banner-hero img/Wendi Monna.jpg'} alt=''></img>
                     <div className='Card__text'>
                         <div className='Card__text--service'>Founder</div>
                         <p>The biggest risk is not taking any risk. In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.</p>

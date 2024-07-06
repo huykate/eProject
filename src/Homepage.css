@@ -16,6 +16,7 @@
     width: 65%;
 }
 .Main--text1{
+    margin: 0 10px;
     font-size: 40px;
     font-weight: 600;
 }
@@ -78,6 +79,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 50px;
     height: 500px;
 }
 .Main__slide--detail:hover{
@@ -92,12 +94,7 @@
 .Main__slide--tiitle{
     text-align: center;
 }
-.Main__title--btn{
-    margin: 10px 0;
-    :nth-child(2){
-        border-left: 1px solid #000;
-        border-right: 1px solid #000;
-}}
+
 .Main__title--btnDetail{
     background-color: transparent;
     color: #000;
@@ -114,8 +111,9 @@
     justify-content: space-around;
     height: 500px;
 }
-.Main__bestPro--size{
+.Main__bestPro--img{
     height: 400px;
+    margin-right: 40px;
 }
 .Main__bestPro--detail{
     text-align: center;
@@ -137,3 +135,13 @@
         inset -4px -4px 6px 0 rgba(255,255,255,.2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
+
+
+@media screen and (max-width:1920px){
+    .Main--text1{
+        font-size: 30px
+    }
+    .Main--text2{
+        font-size: 15px
+    }
+};

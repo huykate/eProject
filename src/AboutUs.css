@@ -91,3 +91,23 @@
     font-size: 35px;
     font-weight: 600;
 }
+
+@media screen and (max-width:1290px){
+    .Card__img , .Card__img--2{
+        margin: 0 4%;
+    }
+    .Card__text--service{
+        font-size: 25px;
+    }
+    .Card__text p{
+        font-size: 25px;
+    }
+    .Card--2 .Card__detail .Card__text p{
+        font-size: 25px;
+        margin: 0 20px
+    }
+    .Card__Text--name{
+        font-size: 30px;
+        margin: 0 20px
+    }
+};

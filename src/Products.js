@@ -3,11 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-
-
 import './Product.css';
-
 function ProductList() { 
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -64,8 +60,7 @@ function ProductList() {
         </>
     );    
 };
-
-function Product({name,img_url,price,rating,id}){
+ function Product({name,img_url,price,rating,id}){
     var pic=img_url?.split(",")[0]+".jpg";
 
     const navigate = useNavigate();
