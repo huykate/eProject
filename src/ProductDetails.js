@@ -148,7 +148,7 @@ function ProductDetails() {
             const firstImageUrl =
               relatedImageUrls.length > 0 ? relatedImageUrls[0].trim() : null;
             return (
-              <div className="related-product-card" key={product.id}>
+              <div className="related-product-card" key={product.id}  onClick={() => {navigate(`/Product/${id}`); console.log(`/Product/${id}`) }}>
                 {firstImageUrl && (
                   <img
                     src={

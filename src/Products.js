@@ -1,7 +1,9 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+
 
 
 import './Product.css';
@@ -44,36 +46,48 @@ function ProductList() {
                 </div>
             </div>  
             <div className='grid'>
-                <div className='Product'>
-                    {products.map((pro) =>(
-                    <Product 
-                        name={pro.name}
-                        img_url={pro.img_url}
-                        price={pro.price}
-                        rating={pro.rating}
-                    /> ))}
-                </div>                           
+                <div className='container'>
+                    <div className='row'>
+                         {products.map((pro) =>(
+                            <div key={pro.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
+                                <Product 
+                                    name={pro.name}
+                                    img_url={pro.img_url}
+                                    price={pro.price}
+                                    rating={pro.rating}
+                                    id={pro.id}
+                                />
+                        </div>))}
+                    </div>
+                </div> 
             </div>
-            
         </>
     );    
 };
 
-function Product({name,img_url,price,rating}){
+function Product({name,img_url,price,rating,id}){
     var pic=img_url?.split(",")[0]+".jpg";
-    console.log(process.env.PUBLIC_URL + "../proImg/"+pic)
+
+    const navigate = useNavigate();
     return(
-        <Card style={{ width: '15rem' }}>
-        <Card.Img  variant="top" src={process.env.PUBLIC_URL + "../proImg/"+pic} />
+        <div onClick={() => navigate(`/Product/${id}`)}>
+        <Card className='Product__layout'>
+        <Card.Img variant="top" fluid src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
         <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>
-                {price}
-                {rating}
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            {price }<br />
+            <div className="product-rating">
+                {"★".repeat(Math.floor(rating)) +
+                  "☆".repeat(5 - Math.floor(rating))}
+              </div>
+          </Card.Text>
+          <Button className='Product__btn' variant="primary">Go somewhere</Button>
         </Card.Body>
-        </Card>  
+      </Card>
+         </div>                      
+
+
     )
 }
 export default ProductList;
