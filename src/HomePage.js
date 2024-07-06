@@ -15,8 +15,30 @@ function Main(){
     // useEffect(() => {
     //   console.log("Current slide changed to: ", currentSlide); 
     // }, [currentSlide]);
-
   };
+  const responsiveSettings = [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+          breakpoint: 300,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+];
   return(
     <>
     <div className='Main'>
@@ -37,7 +59,7 @@ function Main(){
     </div>
     <div className='Main__slide'>
       <div className='grid'>
-        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3}  >
+        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={3} responsive={responsiveSettings}  >
         <div className='Main__slide--detail'>
         <Card style={{ width: '18rem' }}>
           <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../img/Banner-hero img/body.jpg'} />
@@ -100,7 +122,7 @@ function Main(){
       
       <div className='Main__slide'>
       <div className='grid'>
-        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} currentSlide={currentSlide}  >
+        <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} currentSlide={currentSlide} responsive={responsiveSettings}  >
         <div className='Main__slide--detail'>
           
         </div>
