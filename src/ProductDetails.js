@@ -53,7 +53,7 @@ function ProductDetails() {
   }, [id]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <h2>404 NOT FOUND</h2>;
   }
 
   // Split the img_url string into an array of image URLs if it exists
@@ -71,7 +71,7 @@ function ProductDetails() {
 
   const parsePrice = (price) => parseFloat(price.replace("$", ""));
 
-  const total = parsePrice(product.price) * quantity;
+//   const total = parsePrice(product.price) * quantity;
 
   return (
     <>

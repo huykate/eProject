@@ -19,7 +19,6 @@
     border-radius: 10px;
     width: 100%;
     height: 400px; /* Set a fixed height */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
 
 .product-info {
@@ -140,7 +139,7 @@
     }
 }
 /* ------------------------------------ */
-/* src/RelatedProducts.css */
+/*RelatedProducts css */
 .related-products {
     padding: 40px;
     background-color: #fff;
