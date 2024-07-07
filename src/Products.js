@@ -109,12 +109,12 @@ function ProductList() {
         <div className='container'>
           <div className='row'>
             {filteredProducts.map((pro) => (
-              <div key={pro.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
+              <div key={pro.id} className='col-md-6 col-lg-4 col-xl-3 '>
                 <Card className='Product__layout'>
                   <div onClick={() => navigate(`/Product/${pro.id}`)}>
-                    <Card.Img variant="top" src={process.env.PUBLIC_URL + "../proImg/" + pro.img_url.split(",")[0] + ".jpg"} />
+                    <Card.Img className='Product__img' variant="top" src={process.env.PUBLIC_URL + "../proImg/" + pro.img_url.split(",")[0] + ".jpg"} />
                     <Card.Body>
-                      <Card.Title>{pro.name}</Card.Title>
+                      <Card.Title className='Product__title'>{pro.name}</Card.Title>
                       <Card.Text>
                         {pro.price}<br />
                         <div className="product-rating">

@@ -14,10 +14,6 @@ function Header(){
     const handleDropDownClose= () =>{
         setDropDown(false);
     };
-    // const handleCategoryClick = (category) => {
-    //     navigate(`/Product?category=${category}`);
-    //     setDropDown(false); // Close the dropdown after clicking
-    // };
 
     return(
         <div className='bgColor'>

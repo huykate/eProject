@@ -75,8 +75,7 @@
 
 .Product__img {
     height: 300px;
-    width: auto;
-    object-fit: cover;
+    object-fit: contain;
     transition: opacity 0.3s ease;
     margin-bottom: 15px;
 }
@@ -102,17 +101,25 @@
 }
 
 .product-rating {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
     font-size: 1.2em;
     color: #ff6600;
     margin: 10px 0;
 }
 
 .Product__btn {
-    margin-top: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
     background-color: #b40024;
     border: none;
     color: white;
-    padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
@@ -139,7 +146,7 @@
         height: 500px;
     }
     .Product__img {
-        height: 250px;
+        height: 200px;
     }
 }
 
@@ -158,6 +165,12 @@
     }
     .Product__img {
         height: 220px;
+    }
+    .Product__btn {
+        bottom: 10px;
+    }
+    .Product__title{
+        font-size: 15px;
     }
 }
 
@@ -178,4 +191,7 @@
     .Product__img {
         height: 200px;
     }
+    .product-rating{
+        bottom: 40px;
+    } 
 }

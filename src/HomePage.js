@@ -1,6 +1,7 @@
 import './Homepage.css';
 import { Slide } from 'react-slideshow-image';
 import { useState, useEffect } from 'react';
+import { useNavigate,Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Card from 'react-bootstrap/Card';
@@ -45,7 +46,7 @@ function Main() {
 
   const responsiveSettings = [
     {
-      breakpoint: 800,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -54,7 +55,7 @@ function Main() {
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -81,7 +82,7 @@ function Main() {
             <div className='Main__banner--text'>
               <h2 className='Main--text1'>Discover the beauty of 70+ years of Clarins innovation</h2>
               <div className='Main--text2'>Transform your skincare routine with Clarins' proven formulas and decades of expertise - your radiant complexion awaits!</div>
-              <button className='Main__banner--btn custom-btn '>see more</button>
+              <Link to={'/Product'}><button className='Main__banner--btn custom-btn '>see more</button></Link>
             </div>
             <img className='Main__banner--img' src={process.env.PUBLIC_URL + '../img/Banner-hero img/banner.gif'} alt=''></img>
           </div>
@@ -171,11 +172,11 @@ function Main() {
         </div>
         <div className='Main__bestPro'>
           <div className='Main__bestPro--layout grid'>
-            <img className='Main__bestPro--size' src={process.env.PUBLIC_URL + '../img/Aura Perfect/Aura Perfect-1.jpeg'} alt=''></img>
+            <img className='Main__bestPro--size' src={process.env.PUBLIC_URL + '../proImg/Atelier-Cologne-orange-sanguine-cologne-absolue-1.jpg'} alt=''></img>
             <div className='Main__bestPro--detail'>
-              <div className='Main--text1'>Aura Perfect</div>
-              <div className='Main--text2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</div>
-              <button className='Main__bestPro--btn custom-btn'>see more</button>
+              <div className='Main--text1'>Atelier Cologne orange sanguine cologne absolue</div>
+              <div className='Main--text2'>The formula of this Cologne Absolue is made from 91% renewable natural origin ingredients of the highest quality.</div>
+              <Link to={'/Product/30'} ><button className='Main__bestPro--btn custom-btn'>see more</button></Link>
             </div>
           </div>
         </div>

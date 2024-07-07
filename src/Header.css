@@ -37,7 +37,7 @@
 }
 .Header__dropBox {
     display: flex;
-    min-width: 500px;
+    min-width: 600px;
     padding: 0;
     top: 22px;
     position: absolute;
@@ -54,6 +54,7 @@
     font-weight: 600;
     border-right: 2px #333 solid;
 }
+.Header__dropBox
 .Header__dropBox--category:hover {
     cursor: pointer;
     opacity: 0.8;
