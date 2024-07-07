@@ -25,12 +25,12 @@ function Header(){
                     <Link to={"/Product"} className='Header__nav--item'onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose} >PRODUCTS</Link> 
                         {dropDown && (
                             <ul onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}  className='Header__dropBox'>
-                                <Link to={"/Product"}  className='Header__dropBox--detail'>Body</Link>
-                                <Link  to={"/Product"} className='Header__dropBox--detail'>Face</Link>
-                                <Link to={"/"} className='Header__dropBox--detail'>Hair</Link>
-                                <Link to={"/"} className='Header__dropBox--detail'>Sun Cream </Link>
-                                <Link to={"/"} className='Header__dropBox--detail'>Perfumes</Link>
-                                <Link to={"/"} className='Header__dropBox--detail'>Make up </Link>
+                                <Link to={"/product/category/body"}  className='Header__dropBox--detail'>Body</Link>
+                                <Link  to={"/product/category/face"} className='Header__dropBox--detail'>Face</Link>
+                                <Link to={"/product/category/hair"} className='Header__dropBox--detail'>Hair</Link>
+                                <Link to={"/product/category/sunscreen"} className='Header__dropBox--detail'>Sun Cream </Link>
+                                <Link to={"/product/category/perfumes"} className='Header__dropBox--detail'>Perfumes</Link>
+                                <Link to={"/product/category/make%20up"} className='Header__dropBox--detail'>Make up </Link>
                             </ul>
                         )}
                                                                                    

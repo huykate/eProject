@@ -82,22 +82,22 @@ function Footer() {
                 <h3>CATEGORY</h3>
                 <ul>
                   <li>
-                    <a href="a">FACE</a>
+                    <a href="/product/category/face">FACE</a>
                   </li>
                   <li>
-                    <a href="a">BODY</a>
+                    <a href="/product/category/body">BODY</a>
                   </li>
                   <li>
-                    <a href="a">SUN CREAM</a>
+                    <a href="/product/category/sunscreen">SUN CREAM</a>
                   </li>
                   <li>
-                    <a href="a">HAIR</a>
+                    <a href="/product/category/hair">HAIR</a>
                   </li>
                   <li>
-                    <a href="a">PERFUME</a>
+                    <a href="/product/category/perfumes">PERFUME</a>
                   </li>
                   <li>
-                    <a href="a">MAKE UP</a>
+                    <a href="/product/category/make%20up">MAKE UP</a>
                   </li>
                 </ul>
               </div>
