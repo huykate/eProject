@@ -139,7 +139,7 @@ function ProductDetails() {
               <div
                 className="related-product-card"
                 key={relatedProduct.id}
-                onClick={() => navigate(`/Product/${relatedProduct.id}`)}
+                onClick={() => {window.location.href=`/Product/${relatedProduct.id}`;}}
               >
                 {firstImageUrl && (
                   <img

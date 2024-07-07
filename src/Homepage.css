@@ -85,8 +85,8 @@
     zoom: 1.05;
   }
   .Main__slide--img {
-    height: 500px;
-    object-fit: cover;
+    height: 400px;
+    object-fit: contain;
     transition: all 0.2s;
   }
   .Main__slide--tiitle {

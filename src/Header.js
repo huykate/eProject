@@ -14,11 +14,7 @@ function Header(){
     const handleDropDownClose= () =>{
         setDropDown(false);
     };
-    const navigate = useNavigate();
-
-    const handleClick = (category) => {
-        navigate(`/Product?category=${category}`);
-    };
+    
 
     return(
         <div className='bgColor'>
@@ -30,7 +26,7 @@ function Header(){
                         {dropDown && (
                             <ul onMouseEnter={handleDropDownOpen} onMouseLeave={handleDropDownClose}  className='Header__dropBox'>
                                 <Link to={"/Product"}  className='Header__dropBox--detail'>Body</Link>
-                                <Link  to={"/Product"} className='Header__dropBox--detail' onClick={() => handleClick("FACE")}>Face</Link>
+                                <Link  to={"/Product"} className='Header__dropBox--detail'>Face</Link>
                                 <Link to={"/"} className='Header__dropBox--detail'>Hair</Link>
                                 <Link to={"/"} className='Header__dropBox--detail'>Sun Cream </Link>
                                 <Link to={"/"} className='Header__dropBox--detail'>Perfumes</Link>

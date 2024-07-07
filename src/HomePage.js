@@ -11,6 +11,7 @@ function Main() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchProducts();
@@ -49,7 +50,7 @@ function Main() {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         duration: 300, // Adjust duration for smoother transition
         easing: 'ease-in-out' // Use smooth easing function
       }
@@ -58,7 +59,7 @@ function Main() {
       breakpoint: 800,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         duration: 300,
         easing: 'ease-in-out'
       }
@@ -158,7 +159,7 @@ function Main() {
               <Slide cssClass='Main__slide--layout' autoplay={false} canSwipe={false} transitionDuration={500} slidesToScroll={1} slidesToShow={4} responsive={responsiveSettings}>
                 {filteredProducts.slice(0, 9).map(product => (
                   <div className='Main__slide--detail' key={product.id}>
-                    <Card style={{ width: '18rem' }}>
+                    <Card  onClick={() => navigate(`/Product/${product.id}`)} style={{ width: '18rem' }}>
                       <Card.Img className='Main__slide--img' variant="top" src={process.env.PUBLIC_URL + '../proImg/' + product.img_url.split(",")[0] + ".jpg"} />
                       <Card.Body className='Main__slide--tiitle'>
                         <Card.Title>{product.name}</Card.Title>
@@ -186,27 +187,27 @@ function Main() {
 }
 
 
-function Product({name,img_url,price,rating,id}){
-  var pic=img_url?.split(",")[0]+".jpg";
+// function  Product({name,img_url,price,rating,id}){
+//   var pic=img_url?.split(",")[0]+".jpg";
 
-  const navigate = useNavigate();
-  return(
-      <div onClick={() => navigate(`/Product/${id}`)}>
-      <Card className='Product__layout'>
-        <Card.Img className='Product__img' variant="top" src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>
-            {price }<br />
-            <div className="product-rating">
-              {"★".repeat(Math.floor(rating)) +
-              "☆".repeat(5 - Math.floor(rating))}
-            </div>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-       </div>                      
-  )
-}
+//   const navigate = useNavigate();
+//   return(
+//       <div onClick={() => navigate(`/Product/${id}`)}>
+//       <Card className='Product__layout'>
+//         <Card.Img className='Product__img' variant="top" src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
+//         <Card.Body>
+//           <Card.Title>{name}</Card.Title>
+//           <Card.Text>
+//             {price }<br />
+//             <div className="product-rating">
+//               {"★".repeat(Math.floor(rating)) +
+//               "☆".repeat(5 - Math.floor(rating))}
+//             </div>
+//           </Card.Text>
+//         </Card.Body>
+//       </Card>
+//        </div>                     
+//   )
+// }
 
 export default Main;
