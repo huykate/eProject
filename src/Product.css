@@ -100,7 +100,7 @@
     color: #777;
 }
 
-.product-rating {
+.Product__rating {
     position: absolute;
     left: 0;
     right: 0;
@@ -191,7 +191,7 @@
     .Product__img {
         height: 200px;
     }
-    .product-rating{
+    .Product__rating{
         bottom: 40px;
     } 
 }

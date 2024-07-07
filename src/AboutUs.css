@@ -140,52 +140,22 @@
 }
 
 @media (max-width: 1024px) {
-    .Title__top {
-        font-size: 50px;
+    .Card__img , .Card__img--2{
+        margin: 0 4%;
     }
-
-    .Title__bottom {
-        font-size: 60px;
-        padding-left: 200px;
+    .Card__text--service{
+        font-size: 25px;
     }
-
-    .Bio {
-        width: 400px;
+    .Card__text p{
+        font-size: 25px;
     }
-
-    .Bio__text {
-        font-size: 16px;
+    .Card--2 .Card__detail .Card__text p{
+        font-size: 25px;
+        margin: 0 20px
     }
-
-    .Title__secondary--text {
+    .Card__Text--name{
         font-size: 30px;
-    }
-
-    .Card__text {
-        font-size: 24px;
-        width: 550px;
-    }
-
-    .Card__text--service {
-        font-size: 20px;
-    }
-
-    .Card__Text--name {
-        font-size: 26px;
-    }
-
-    .Card__detail {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .Card__img, .Card__img--2 {
-        height: auto;
-        width: 100%;
-    }
-
-    .Card__text {
-        text-align: center;
+        margin: 0 20px
     }
 }
 
