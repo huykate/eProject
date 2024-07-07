@@ -1,93 +1,190 @@
-
-.Title{
+.Title {
     text-align: center;
     width: 900px;
     max-width: 100%;
     margin: 50px auto;
 }
-.Title__top{
-    font-family: 'Josefin',serif;
+
+.Title__top {
+    font-family: 'Josefin', serif;
     font-size: 80px;
     color: #333;
 }
-.Title__bottom{
-    font-family: 'Vollkorn',sans-serif;
+
+.Title__bottom {
+    font-family: 'Vollkorn', sans-serif;
     line-height: 90px;
     padding-left: 400px;
     margin: 0 0 50px 0;
     font-size: 90px;
-    background: linear-gradient(to bottom, #b51828 0%, #B52F18 50%, #ba626b 100% );
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    color: transparent; 
+    background: linear-gradient(to bottom, #b51828 0%, #B52F18 50%, #ba626b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
-.Bio{
+
+.Bio {
     width: 600px;
     margin: 0 auto;
 }
-.Bio__text{
+
+.Bio__text {
     margin: 10px 0;
     text-align: center;
     font-size: 20px;
 }
-.Title__secondary{
+
+.Title__secondary {
     font-family: serif;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 100px 0;
     width: 100%;
     height: 150px;
     color: #b51828;
-    
 }
-.Title__secondary--text{ 
+
+.Title__secondary--text {
     width: 950px;
     font-size: 40px;
     text-align: center;
-    font-weight: 300;   
-   
+    font-weight: 300;
 }
-.Card{
+
+.Card {
     background-color: antiquewhite;
     margin: 200px 0;
 }
-.Card--2{
-    background-color: #dcdcc2;  
+
+.Card--2 {
+    background-color: #dcdcc2;
     margin: 200px 0;
 }
-.Card__detail{  
+
+.Card__detail {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 600px;
 }
-.Card__img{
+
+.Card__img {
     height: 500px;
-    box-shadow: 20px -20px  0px 8px #fff ;  
+    box-shadow: 20px -20px 0px 8px #fff;
 }
-.Card__img--2{
+
+.Card__img--2 {
     height: 500px;
-    box-shadow: -20px 20px  0px 8px #423838 ;
+    box-shadow: -20px 20px 0px 8px #423838;
 }
-.Card__text{
+
+.Card__text {
     position: relative;
     font-size: 30px;
     font-weight: 400;
     width: 750px;
     text-align: left;
 }
-.Card__text--service{
+
+.Card__text--service {
     margin: 10px 20px;
     width: 200px;
     font-weight: 500;
     border-bottom: solid 4px #ffdd00;
 }
-.Card__Text--name{
+
+.Card__Text--name {
     margin-top: 10px;
     width: fit-content;
     position: absolute;
     right: 10px;
     font-size: 35px;
     font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+    .Title__top {
+        font-size: 60px;
+    }
+
+    .Title__bottom {
+        font-size: 70px;
+        padding-left: 300px;
+    }
+
+    .Bio {
+        width: 500px;
+    }
+
+    .Bio__text {
+        font-size: 18px;
+    }
+
+    .Title__secondary--text {
+        font-size: 35px;
+    }
+
+    .Card__text {
+        font-size: 28px;
+        width: 650px;
+    }
+
+    .Card__text--service {
+        font-size: 24px;
+    }
+
+    .Card__Text--name {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Title__top {
+        font-size: 50px;
+    }
+
+    .Title__bottom {
+        font-size: 60px;
+        padding-left: 200px;
+    }
+
+    .Bio {
+        width: 400px;
+    }
+
+    .Bio__text {
+        font-size: 16px;
+    }
+
+    .Title__secondary--text {
+        font-size: 30px;
+    }
+
+    .Card__text {
+        font-size: 24px;
+        width: 550px;
+    }
+
+    .Card__text--service {
+        font-size: 20px;
+    }
+
+    .Card__Text--name {
+        font-size: 26px;
+    }
+
+    .Card__detail {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Card__img, .Card__img--2 {
+        height: auto;
+        width: 100%;
+    }
+
+    .Card__text {
+        text-align: center;
+    }
 }

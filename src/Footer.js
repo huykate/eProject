@@ -1,39 +1,76 @@
-import React from "react";
-import "./App.js";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const [dateTime, setDateTime] = useState(new Date());
+  const [location, setLocation] = useState({ city: '', country: '' });
+  const [fetchError, setFetchError] = useState(null);
+
+  useEffect(() => {
+    // Update date and time every second
+    const timer = setInterval(() => {
+      setDateTime(new Date());
+    }, 1000);
+
+    // Get user's location
+    navigator.geolocation.getCurrentPosition(async (position) => {
+      const { latitude, longitude } = position.coords;
+      try {
+        const response = await fetch(`https://geocode.xyz/${latitude},${longitude}?geoit=json&auth=259213874262281488510x57524`);
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+        const data = await response.json();
+        setLocation({ city: data.city, country: data.country });
+      } catch (error) {
+        console.error("Error fetching the location data:", error);
+        setFetchError("Could not fetch location data. Please try again later.");
+      }
+    });
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatDate = (date) => {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
+  };
+
+  const formatTime = (date) => {
+    return date.toLocaleTimeString();
+  };
+
   return (
-    <footer className="footer ">
+    <footer className="footer">
       <div className="grid">
         <div>
           <div className="payment-methods">
             <hr />
             <div className="payment-methods-img">
               <img
-                src={process.env.PUBLIC_URL + "../photo/visa.png"}
+                src={process.env.PUBLIC_URL + "/photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "/photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
               <img
-                src={process.env.PUBLIC_URL + "../photo/visa.png"}
+                src={process.env.PUBLIC_URL + "/photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "/photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
               <img
-                src={process.env.PUBLIC_URL + "../photo/visa.png"}
+                src={process.env.PUBLIC_URL + "/photo/visa.png"}
                 alt="Visa"
               />
               <img
-                src={process.env.PUBLIC_URL + "../photo/MasterCard_Logo.svg"}
+                src={process.env.PUBLIC_URL + "/photo/MasterCard_Logo.svg"}
                 alt="Mastercard"
               />
             </div>
@@ -86,7 +123,7 @@ function Footer() {
                 <li>
                   <a href="https://www.clarinsusa.com/">
                     <img
-                      src={process.env.PUBLIC_URL + "../photo/facebook.png"}
+                      src={process.env.PUBLIC_URL + "/photo/facebook.png"}
                       alt="Facebook"
                     ></img>
                   </a>
@@ -94,7 +131,7 @@ function Footer() {
                 <li>
                   <a href="https://www.youtube.com/channel/UC_7lNVaR-bVxeQwPRta5RyQ">
                     <img
-src={process.env.PUBLIC_URL + "../photo/youtube.png"}
+                      src={process.env.PUBLIC_URL + "/photo/youtube.png"}
                       alt="Youtube"
                     ></img>
                   </a>
@@ -102,7 +139,7 @@ src={process.env.PUBLIC_URL + "../photo/youtube.png"}
                 <li>
                   <a href="https://www.instagram.com/clarinsusa/">
                     <img
-                      src={process.env.PUBLIC_URL + "../photo/Instagram_V3.svg"}
+                      src={process.env.PUBLIC_URL + "/photo/Instagram_V3.svg"}
                       alt="Instagram"
                     ></img>
                   </a>
@@ -110,7 +147,7 @@ src={process.env.PUBLIC_URL + "../photo/youtube.png"}
                 <li>
                   <a href="https://twitter.com/clarinsusa">
                     <img
-                      src={process.env.PUBLIC_URL + "../photo/Twitter_Black.svg"}
+                      src={process.env.PUBLIC_URL + "/photo/Twitter_Black.svg"}
                       alt="Twitter"
                     ></img>
                   </a>
@@ -120,7 +157,7 @@ src={process.env.PUBLIC_URL + "../photo/youtube.png"}
             <div className="clarinsLogo-footer">
               <a href="a">
                 <img
-                  src={process.env.PUBLIC_URL + "../photo/Ảnh1-removebg.png"} alt="Logo"
+                  src={process.env.PUBLIC_URL + "/photo/Ảnh1-removebg.png"} alt="Logo"
                 ></img>
               </a>
             </div>
@@ -134,7 +171,7 @@ src={process.env.PUBLIC_URL + "../photo/youtube.png"}
               <br />
               <div className="need-help">
                 <h3>NEED HELPS?</h3>
-                <br />
+                {/* <br /> */}
                 <p>
                   <a href="mailto:clarins@example.com?subject=Support&body=Message">
                     Email{" "}
@@ -166,6 +203,13 @@ src={process.env.PUBLIC_URL + "../photo/youtube.png"}
           <p>&copy; 2024 Clarins. All rights reserved.</p>
         </div>
       </div>
+      <div className="ticker">
+        <marquee behavior="scroll" direction="left">
+          {formatDate(dateTime)} | {formatTime(dateTime)} | {location.city}, {location.country}
+          {fetchError && <div className="fetch-error">{fetchError}</div>}
+        </marquee>
+      </div>
+      
     </footer>
   );
 }

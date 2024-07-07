@@ -1,63 +1,75 @@
 .footer {
   background: url('https://images.unsplash.com/photo-1619506147143-803515ade202?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  /* filter: brightness(1.2); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #fff;
   padding: 20px;
-  
+  position: relative;
 }
 
 .footer .footer-mid {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   padding-top: 20px;
 }
+
 .footer .payment-methods-img {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
+
 .footer .payment-methods img {
   width: 50px;
   height: 20px;
   margin-right: 15px;
 }
+
 .footer .footer-links {
   display: flex;
   gap: 70px;
+  flex-wrap: wrap;
 }
+
 .footer .footer-links ul {
   padding-top: 15px;
   list-style: none;
   padding-left: 10px;
 }
+
 .footer .footer-links ul li {
   margin-bottom: 20px;
 }
+
 .footer .footer-links a {
   color: #fff;
 }
+
 .footer .footer-links .about-links {
   margin-top: 30px;
 }
+
 .footer .footer-links .about-links li {
   background-color: transparent;
   padding-right: 20px;
   margin-top: 40px;
 }
+
 .footer .followUs {
   margin-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer .followUs h3 {
   margin-left: 0;
   text-align: center;
 }
+
 .footer .followUs ul {
   list-style: none;
   display: flex;
@@ -67,30 +79,28 @@
 
 .footer .followUs-logo {
   display: flex;
-  /* padding-left: 30px; */
   justify-content: center;
 }
+
 .footer .followUs-logo img {
   width: 30px;
   height: 30px;
   margin: 0 7px;
 }
+
 .footer .clarinsLogo-footer {
   margin-top: 30px;
 }
+
 .footer .clarinsLogo-footer img {
   width: 280px;
 }
-/* .footer .footer-links .about-links .about-us {  
-  padding-right: 41.12px;
-} */
-/* .footer .newsletter .sign-up {
-  margin-bottom: 20px;
-} */
+
 .footer .newsletter input {
   padding: 5px;
   margin-right: 10px;
 }
+
 .footer .newsletter button {
   padding: 5px 10px;
   background-color: #ff4081;
@@ -98,9 +108,57 @@
   border: none;
   cursor: pointer;
 }
-/* .footer .need-help {
-  margin-top: 20px;
-} */
+
 .footer .footer-bottom {
   text-align: center;
+}
+
+.ticker {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fetch-error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media Queries for Laptops (1024px - 1440px) */
+@media (max-width: 1440px) {
+  .footer .footer-links {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer .footer-links {
+    gap: 40px;
+  }
+}
+
+/* Media Queries for iPad Pro (1024px) */
+@media (max-width: 1024px) {
+  .footer .footer-mid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-links ul {
+    padding: 0;
+  }
+  .footer .followUs {
+    margin-top: 50px;
+  }
+  .footer .newsletter {
+    text-align: center;
+  }
 }

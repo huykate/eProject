@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import CountUp from 'react-countup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +14,10 @@ function Header(){
     const handleDropDownClose= () =>{
         setDropDown(false);
     };
+    // const handleCategoryClick = (category) => {
+    //     navigate(`/Product?category=${category}`);
+    //     setDropDown(false); // Close the dropdown after clicking
+    // };
 
     return(
         <div className='bgColor'>
@@ -44,7 +48,9 @@ function Header(){
             </div>
             <div className='Header__navRight'>
                 <a href='/' ><img className='Header__navRight--logo' src={process.env.PUBLIC_URL + '/Ảnh1-removebg-preview.png'} alt="Ảnh 1" /></a>
-                <div className='Header__navRight--count'><h2><CountUpExample /></h2></div>
+                <div className='Header__navRight--count'>
+                    <h2><CountUpExample /></h2>
+                </div>
                 <Link to="/cart" className='Header__navRight--cart'>
                         <FontAwesomeIcon icon={faShoppingCart} variant='none' size="2x" />
                 </Link>

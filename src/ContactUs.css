@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
 }
-/* <----------------------------------> */
+
 /* css form */
 .contact-form-container {
     max-width: 800px;
@@ -51,18 +51,19 @@
     border-radius: 5px;
     background-color: transparent;
     outline: none;
- 
 }
 
 .hint-box-icon {
     display: flex;
     align-items: center;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     text-align: center;
 }
+
 .hint-box img {
     width: 80px;
 }
+
 .hint-box .content {
     padding: 0 16px;
     font-size: 14px;
@@ -74,9 +75,11 @@
     -webkit-line-clamp: 4;
     overflow: hidden;
 }
+
 .hint-box .content:hover {
     font-size: larger;
 }
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -116,15 +119,18 @@
 .file-upload input {
     display: none;
 }
+
 .upload-button {
     padding: 0 2px;
     border-radius: 2px;
 }
+
 .checkbox-group {
     display: flex;
     justify-content: flex-start; /* Align left */
     width: 100%; /* Ensure full width */
 }
+
 .submit-button {
     padding: 10px 20px; /* Adjust padding to make button fit its content */
     font-size: 16px;
@@ -142,3 +148,47 @@
     background-color: #a00;
 }
 
+@media (max-width: 1440px) {
+    .contact-form-container h1 {
+        font-size: 1.8em;
+    }
+
+    .contact-form-container p {
+        font-size: 14px;
+    }
+
+    .hint-box img {
+        width: 60px;
+    }
+
+    .hint-box .content {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .embed-container {
+        max-width: 90%;
+    }
+
+    .hints {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hint-box img {
+        width: 50px;
+    }
+
+    .hint-box .content {
+        font-size: 12px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-form-container p {
+        font-size: 14px;
+    }
+}
