@@ -80,7 +80,7 @@ function ProductDetails() {
           <Carousel>
             {imageUrls.map((url, index) => (
               <Carousel.Item key={index}>
-                <img
+                <img 
                   src={
                     process.env.PUBLIC_URL + "../proImg/" + url.trim() + ".jpg"
                   }

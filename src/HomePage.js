@@ -1,7 +1,6 @@
 import { Slide } from 'react-slideshow-image';
 import { useState,useEffect} from 'react';
 import { Link ,useNavigate} from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'react-slideshow-image/dist/styles.css';
 import './Homepage.css';
@@ -158,7 +157,7 @@ function Product({name,img_url,price,rating,id}){
   return(
       <div onClick={() => navigate(`/Product/${id}`)}>
       <Card className='Product__layout'>
-      <Card.Img variant="top" fluid src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
+      <Card.Img variant="top" src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
@@ -168,7 +167,6 @@ function Product({name,img_url,price,rating,id}){
                 "☆".repeat(5 - Math.floor(rating))}
             </div>
         </Card.Text>
-        <Button className='Product__btn' variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
        </div>                      

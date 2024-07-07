@@ -45,7 +45,7 @@ function ProductList() {
                 <div className='container'>
                     <div className='row'>
                          {products.map((pro) =>(
-                            <div key={pro.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
+                            <div key={pro.id} className='col-lg-4 col-xl-3 '>
                                 <Product 
                                     name={pro.name}
                                     img_url={pro.img_url}
@@ -65,11 +65,11 @@ function ProductList() {
 
     const navigate = useNavigate();
     return(
-        <div onClick={() => navigate(`/Product/${id}`)}>
+        <div  onClick={() => navigate(`/Product/${id}`)}>
         <Card className='Product__layout'>
-        <Card.Img variant="top" fluid src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
+        <Card.Img className='Product__img' variant="top"  src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title className='Product__title' >{name}</Card.Title>
           <Card.Text>
             {price }<br />
             <div className="product-rating">

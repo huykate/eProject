@@ -17,9 +17,9 @@
 
 .product-images img {
     border-radius: 10px;
-    width: 100%;
+    width: 600px;
     height: 400px; /* Set a fixed height */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    object-fit: contain; /* Maintain aspect ratio and cover the area */
 }
 
 .product-info {
@@ -46,7 +46,7 @@
 }
 
 .product-rating {
-    position: absolute;
+    /* position: absolute; */
     font-size: 1.5em;
     color: #ff6600;
     margin-right: 10px;
@@ -124,12 +124,15 @@
     background-color: #e65c00;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1900px) {
     .product-details {
         flex-direction: column;
         align-items: center;
     }
-
+    .product-images{
+        width: 400px;
+        object-fit: cover;
+    }
     .product-images, .product-info {
         margin: 0;
         padding: 10px;

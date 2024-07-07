@@ -127,5 +127,9 @@ hr{
     .Header_cart{
         margin: 0 20px;
     }
+    .Header__navRight--count{
+        font-size: 20px;
+        
+    }
 
 }
