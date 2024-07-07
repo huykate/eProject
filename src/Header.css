@@ -5,6 +5,7 @@
     top: 0;
     z-index: 100;
     width: inherit;
+    margin: 0 auto;
 }
 .Header {
     display: flex;
@@ -21,7 +22,6 @@
 .Header__nav--list {
     position: relative;
     padding: 0;
-    border-radius: 7px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +29,6 @@
 .Header__nav--item {
     font-weight: 600;
     color: #000;
-    text-decoration: none;
     margin: 0 20px;
     flex-shrink: 0;
 }
@@ -107,52 +106,7 @@
 .Header__navRight--cart:hover {
     color: grey;
 }
-hr {
+
+hr{
     margin: 0;
-}
-
-/* Media Queries for Laptops (1024px - 1440px) */
-@media (max-width: 1440px) {
-    .Header__nav--item {
-        margin: 0 15px;
-    }
-    .Header__navRight--logo {
-        margin: 0 60px 0 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .Header__nav--item {
-        margin: 0 10px;
-    }
-    .Header__navRight--logo {
-        margin: 0 40px 0 0;
-    }
-}
-
-/* Media Queries for iPad Pro (1024px) */
-@media (max-width: 1024px) {
-    .Header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .Header__nav {
-        flex-direction: column;
-        width: 100%;
-    }
-    .Header__nav--item {
-        margin: 10px 0;
-    }
-    .Header__navRight {
-        width: 100%;
-        justify-content: space-between;
-    }
-    .Header__navRight--logo {
-        margin: 10px 0;
-    }
-    .Header__nav--searchBar {
-        margin-left: 0;
-        width: 100%;
-        margin-top: 10px;
-    }
 }

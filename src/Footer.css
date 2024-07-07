@@ -162,3 +162,30 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width:1920px){
+  .category-links h3 {
+    font-size: 25px
+  }
+  .about-us{
+    font-size: 15px;
+    display: block;
+    width:80px;
+  }
+  .sign-up h3{
+    font-weight: 400;
+    font-size: 20px;
+    
+  }
+  .footer .newsletter input{
+    width: 100px;
+    font-size: 12px;
+    margin: 0px ;
+    padding: 2px;
+  }
+  .footer .newsletter button{
+    width: fit-content;
+    font-size: 12px;
+    
+  }
+};

@@ -184,4 +184,28 @@ function Main() {
   );
 }
 
+
+function Product({name,img_url,price,rating,id}){
+  var pic=img_url?.split(",")[0]+".jpg";
+
+  const navigate = useNavigate();
+  return(
+      <div onClick={() => navigate(`/Product/${id}`)}>
+      <Card className='Product__layout'>
+        <Card.Img className='Product__img' variant="top" src={process.env.PUBLIC_URL + "../proImg/"+pic}  />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            {price }<br />
+            <div className="product-rating">
+              {"★".repeat(Math.floor(rating)) +
+              "☆".repeat(5 - Math.floor(rating))}
+            </div>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+       </div>                      
+  )
+}
+
 export default Main;
