@@ -72,7 +72,7 @@ function ProductList() {
           <Card.Title className='Product__title' >{name}</Card.Title>
           <Card.Text>
             {price }<br />
-            <div className="product-rating">
+            <div className="Product__rating">
                 {"★".repeat(Math.floor(rating)) +
                   "☆".repeat(5 - Math.floor(rating))}
               </div>
